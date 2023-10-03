@@ -54,4 +54,3 @@ ______                             _               _   _
         String html1 = "<html><body style = '" + tabStyle + "'>";
         String html2 = "</body></html>";
 
-Copyright @ Ranjit Patil 2023 ----- AITRC VITA
