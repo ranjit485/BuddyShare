@@ -1,7 +1,7 @@
 
 public class App {
     public static void main(String[] args) {
-    new Header();
+    new Sem_6();
 
 //        new Footer();
 
