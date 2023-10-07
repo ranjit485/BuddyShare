@@ -39,7 +39,21 @@ public class sem_3 extends Header{
         sb4= new JButton("Download");
         sb5= new JButton("Download");
 
+        sb1.setBounds(285,4,90,30);
+        sb2.setBounds(285,4,90,30);
+        sb3.setBounds(285,4,90,30);
+        sb4.setBounds(285,4,90,30);
+        sb5.setBounds(285,4,90,30);
 
+        p1.add(sb1);
+
+        p2.add(sb2);
+
+        p3.add(sb3);
+
+        p4.add(sb4);
+
+        p5.add(sb5);
 
 
         sem3.add(p1,0);

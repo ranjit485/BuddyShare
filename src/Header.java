@@ -15,7 +15,7 @@ public class Header extends Body{
            JButton sem5Btn = new JButton("SEM-5");
            JButton sem6Btn = new JButton("SEM-6");
 
-           Insets NavButtonMargin = new Insets(5, 24, 5, 24);
+           Insets NavButtonMargin = new Insets(4, 24, 4, 24);
            sem3Btn.setMargin(NavButtonMargin);
            sem4Btn.setMargin(NavButtonMargin);
            sem5Btn.setMargin(NavButtonMargin);
@@ -45,7 +45,7 @@ public class Header extends Body{
 
 
 
-           Font font = new Font("Roboto",Font.BOLD,12);
+           Font font = new Font("SANS-SERIF",Font.BOLD,12);
            sem3Btn.setFont(font);
            sem4Btn.setFont(font);
            sem5Btn.setFont(font);
