@@ -11,7 +11,7 @@ public class UI {
         System.out.println("UI");
         Screen= new JFrame();
         Screen.setTitle("RBuddy");
-        Screen.setSize(409,500);
+        Screen.setSize(409,450);
         Screen.setResizable(false);
         Screen.setLocationRelativeTo(null);
 

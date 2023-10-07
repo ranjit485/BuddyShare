@@ -20,7 +20,6 @@ public class Footer extends UI{
 //        ThankMe.setMargin(new Insets(5,25,5,25));
 
 //        Insets SButtonMargin = new Insets(5, 5, 5, 5);
-
 //        Instagram.setMargin(SButtonMargin);
 //        Instagram.setForeground(Color.YELLOW);
 

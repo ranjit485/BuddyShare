@@ -3,7 +3,6 @@ import java.awt.*;
 
 public class Body extends Footer{
     JPanel body;
-
     Body(){
         System.out.println("body");
         body = new JPanel(new BorderLayout());
