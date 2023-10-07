@@ -6,7 +6,7 @@ public class Body extends Footer{
 
     Body(){
         System.out.println("body");
-        body = new JPanel();
+        body = new JPanel(new BorderLayout());
         body.setBackground(new Color(27,38,44));
 
         Screen.add(body, BorderLayout.CENTER);

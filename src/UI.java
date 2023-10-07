@@ -11,8 +11,9 @@ public class UI {
         System.out.println("UI");
         Screen= new JFrame();
         Screen.setTitle("RBuddy");
-        Screen.setSize(400,450);
+        Screen.setSize(409,500);
         Screen.setResizable(false);
+        Screen.setLocationRelativeTo(null);
 
         Logo = new ImageIcon("src/Images/Logo.png");
         // Footer logo objects
@@ -26,6 +27,6 @@ public class UI {
 
         Screen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Screen.setLayout(new BorderLayout(1,1));
-        Screen.getContentPane().setBackground(new Color(27,38,44));
+        Screen.getContentPane().setBackground(new Color(33,32,48));
     }
 }

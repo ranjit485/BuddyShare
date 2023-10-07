@@ -8,20 +8,21 @@ public class Footer extends UI{
     Footer(){
         System.out.println("footer");
         footer = new JPanel();
-        footer.setBackground(Color.darkGray);
+        footer.setBackground(new Color(62,62,66));
+//        footer.setBackground(Color.darkGray);
 
 
         ThankMe = new JButton("Buy Me a Tea");
-        Instagram = new JButton("I");
+        Instagram = new JButton("Instagram");
         Twitter = new JButton("T",InstagramLogo);
-        Github = new JButton("G");
+        Github = new JButton("Github");
 
-        ThankMe.setMargin(new Insets(5,25,5,25));
+//        ThankMe.setMargin(new Insets(5,25,5,25));
 
-        Insets SButtonMargin = new Insets(5, 5, 5, 5);
+//        Insets SButtonMargin = new Insets(5, 5, 5, 5);
 
-        Instagram.setMargin(SButtonMargin);
-        Instagram.setForeground(Color.YELLOW);
+//        Instagram.setMargin(SButtonMargin);
+//        Instagram.setForeground(Color.YELLOW);
 
 //        To remove the border
 //        Border customBorder = BorderFactory.createLineBorder(Color.RED, 1);
@@ -33,6 +34,6 @@ public class Footer extends UI{
         footer.add(Github);
         footer.add(Instagram);
 
-        Screen.add(footer, BorderLayout.SOUTH);
+        Screen.add(footer, BorderLayout.PAGE_END);
     }
 }
