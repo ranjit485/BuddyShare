@@ -22,7 +22,7 @@ public class UI {
         Screen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Screen.getContentPane().setBackground(mainBg);
         Screen.setLayout(new GridLayout(7,1,8,6));
-
+        Screen.setIconImage(new ImageIcon("src/Images/download.png").getImage());
         // Create important variables
         Color btnBg= new Color(32, 48, 60);
         Border customBorder = BorderFactory.createLineBorder(Color.WHITE, 0,true);
@@ -38,17 +38,17 @@ public class UI {
         p3 = new JPanel();
         p4 = new JPanel();
 
-        sem3Title = new JButton("SEM3");
-        sem4Title = new JButton("SEM4");
-        sem5Title = new JButton("SEM5");
-        sem6Title = new JButton("SEM6");
+        sem3Title = new JButton("SEM 3");
+        sem4Title = new JButton("SEM 4");
+        sem5Title = new JButton("SEM 5");
+        sem6Title = new JButton("SEM 6");
 
         sem3Title.setFocusPainted(false);
         sem4Title.setFocusPainted(false);
         sem5Title.setFocusPainted(false);
         sem6Title.setFocusPainted(false);
 
-        ImageIcon downloadIcon = new ImageIcon(((new ImageIcon("src/Images/logo1.png")).getImage()).getScaledInstance(37, 37, java.awt.Image.SCALE_SMOOTH));
+        ImageIcon downloadIcon = new ImageIcon(((new ImageIcon("src/Images/download.png")).getImage()).getScaledInstance(37, 37, java.awt.Image.SCALE_SMOOTH));
         sem3Download = new JButton(downloadIcon);
         sem4Download = new JButton(downloadIcon);
         sem5Download = new JButton(downloadIcon);
@@ -90,15 +90,15 @@ public class UI {
         sem6Title.setForeground(Color.white);
 
 
-        buyMeTea = new JButton("Buy final year project ");
+        buyMeTea = new JButton("Buy final year project CS AI-ML");
         buyMeTea.setFont(new Font("Sans", Font.PLAIN,18));
 
         greet = new JButton("COMPUTER SCIENCE");
 
-        githubLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/github (1).png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
-        twitterLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/twitter (1).png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
-        websiteLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/github (1).png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
-        copyright = new JButton(new ImageIcon(((new ImageIcon("src/Images/copyright.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
+        githubLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/github.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
+        twitterLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/twitter.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
+        websiteLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/website.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
+        copyright = new JButton(new ImageIcon(((new ImageIcon("src/Images/contribute.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
 
         buyMeTea.setForeground(new Color(33, 37, 43));
         buyMeTea.setFocusPainted(false);

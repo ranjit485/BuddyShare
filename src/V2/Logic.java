@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 public class Logic extends UI{
     String runName;
 
-    Logic(){
+    Logic() {
         sem3Download.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -67,21 +67,34 @@ public class Logic extends UI{
         githubLogo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                try {
-                    String url = "https://github.com/ranjit485/BuddyShare";
-                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
-                } catch (java.io.IOException e) {
-                    System.out.println(e.getMessage());
-                }
+                openUrl("https://github.com/ranjit485/BuddyShare");
+            }
+        });
+        copyright.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openUrl("https://github.com/ranjit485/StudyMaterials");
+            }
+        });
+        websiteLogo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openUrl("https://demon-brother.blogspot.com/");
+            }
+        });
+        twitterLogo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openUrl("https://twitter.com/_ranjit_patil");
+            }
+        });
+        buyMeTea.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openUrl("https://wa.me/917499491002?text=Final%20Year%20Project%20buy");
             }
         });
 
-        buyMeTea.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(sem3Download, "hello");
-            }
-        });
     }
 
     void Brain() throws IOException {
@@ -94,6 +107,13 @@ public class Logic extends UI{
         }
         else {
             JOptionPane.showMessageDialog(sem3Download, "Downloaded in c Drive StudyMaterial folder");
+        }
+    }
+    void openUrl(String url){
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+        } catch (java.io.IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
