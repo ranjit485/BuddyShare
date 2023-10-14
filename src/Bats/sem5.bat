@@ -1,7 +1,7 @@
 @echo off
 call cd /d "c:\"
 call git clone "https://github.com/ranjit485/StudyMaterials"
-call rmdir /s /q C:\StudyMaterials\sem3
-call rmdir /s /q C:\StudyMaterials\sem4
-call rmdir /s /q C:\StudyMaterials\sem6
+call rmdir /s /q C:\StudyMaterials\3rd_SEM
+call rmdir /s /q C:\StudyMaterials\4th_SEM
+call rmdir /s /q C:\StudyMaterials\6th_SEM
 pause

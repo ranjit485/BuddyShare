@@ -1,7 +1,5 @@
 package V2;
 
-import testing.demo1;
-
 import javax.swing.*;
 
 public class App {

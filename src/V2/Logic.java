@@ -66,8 +66,13 @@ public class Logic extends UI{
 
         githubLogo.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(sem3Download, "hello");
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                try {
+                    String url = "https://github.com/ranjit485/BuddyShare";
+                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+                } catch (java.io.IOException e) {
+                    System.out.println(e.getMessage());
+                }
             }
         });
 
