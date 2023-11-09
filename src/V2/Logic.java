@@ -102,12 +102,13 @@ public class Logic extends UI{
         File dir = new File("src/Bats");
         pb.directory(dir);
         Process p = pb.start();
-        if (p.isAlive()){
-            JOptionPane.showMessageDialog(p2, "Downloading...");
-        }
-        else {
-            JOptionPane.showMessageDialog(sem3Download, "Downloaded in c Drive StudyMaterial folder");
-        }
+        System.out.println(p.info());
+        System.out.println(p.isAlive());
+            if (p.isAlive()) {
+                JOptionPane.showMessageDialog(p2, "Downloading...");
+            } else {
+                JOptionPane.showMessageDialog(sem3Download, "Downloaded in c Drive StudyMaterial folder");
+            }
     }
     void openUrl(String url){
         try {

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RBuddy:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RBuddy_jar</output-path>
+    <root id="archive" name="RBuddy.jar">
+      <element id="module-output" name="RBuddy" />
+    </root>
+  </artifact>
+</component>

@@ -4,6 +4,7 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.util.Objects;
 
 public class UI {
     JFrame Screen;
@@ -48,7 +49,7 @@ public class UI {
         sem5Title.setFocusPainted(false);
         sem6Title.setFocusPainted(false);
 
-        ImageIcon downloadIcon = new ImageIcon(((new ImageIcon("src/Images/download.png")).getImage()).getScaledInstance(37, 37, java.awt.Image.SCALE_SMOOTH));
+        ImageIcon downloadIcon = new ImageIcon(((new ImageIcon("out/production/RBuddy/Images/download.png")).getImage()).getScaledInstance(37, 37, java.awt.Image.SCALE_SMOOTH));
         sem3Download = new JButton(downloadIcon);
         sem4Download = new JButton(downloadIcon);
         sem5Download = new JButton(downloadIcon);
@@ -95,10 +96,10 @@ public class UI {
 
         greet = new JButton("COMPUTER SCIENCE");
 
-        githubLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/github.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
-        twitterLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/twitter.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
-        websiteLogo = new JButton(new ImageIcon(((new ImageIcon("src/Images/website.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
-        copyright = new JButton(new ImageIcon(((new ImageIcon("src/Images/contribute.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
+        githubLogo = new JButton(new ImageIcon(((new ImageIcon("out/production/RBuddy/Images/github.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
+        twitterLogo = new JButton(new ImageIcon(((new ImageIcon("out/production/RBuddy/Images/twitter.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
+        websiteLogo = new JButton(new ImageIcon(((new ImageIcon("out/production/RBuddy/Images/website.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
+        copyright = new JButton(new ImageIcon(((new ImageIcon("out/production/RBuddy/Images/contribute.png")).getImage()).getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH)));
 
         buyMeTea.setForeground(new Color(33, 37, 43));
         buyMeTea.setFocusPainted(false);
